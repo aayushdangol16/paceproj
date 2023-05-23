@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+.pro {
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(106, 248, 106);
+  margin-left: 100px;
+  font-size: 18px;
+  color: white;
+  font-size: 25px;
+}
+
+.project-list {
+  width: 100%;
+  text-align: center;
+}
+
+.project-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-box,
+.middle-box,
+.right-box {
+  width: 30%;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  padding: 0px;
+  position: relative; /* Added for positioning the h3 element */
+}
+.left-box:hover,
+.middle-box:hover,
+.right-box:hover {
+  background-color: rgb(3, 3, 3);
+}
+
+.left-box:hover img,
+.middle-box:hover img,
+.right-box:hover img {
+  opacity: 0.2;
+}
+
+.left-box:hover h3,
+.middle-box:hover h3,
+.right-box:hover h3 {
+  display: block;
+}
+
+
+.left-box h3,
+.middle-box h3,
+.right-box h3 {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  pointer-events: none; 
+  font-size: 300%;
+}
+
+.left-box:hover P,
+.middle-box:hover P,
+.right-box:hover P {
+  display: block;
+}
+
+.left-box p,
+.middle-box p,
+.right-box p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  font-size: 200%;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+
+.left-box img,
+.middle-box img,
+.right-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
