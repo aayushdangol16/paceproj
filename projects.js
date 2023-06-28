@@ -9,13 +9,17 @@ function adjustLayout() {
     document.querySelector('.project-container').style.flexDirection = 'column';
     document.querySelectorAll('.left-box, .middle-box, .right-box').forEach(function(box) {
       box.style.width = '100%';
-      box.style.height = 'auto';
+      box.style.height = '300px';
+    
+   
     });
   } else {
     document.querySelector('.project-container').style.flexDirection = 'row';
     document.querySelectorAll('.left-box, .middle-box, .right-box').forEach(function(box) {
       box.style.width = '30%';
-      box.style.height = '400px';
+      box.style.height = '300px';
+      
+
     });
   }
 }
